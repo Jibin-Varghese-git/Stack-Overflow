@@ -1,50 +1,22 @@
+
+*
+{
+  font-family:apple-system, BlinkMacSystemFont, "Segoe UI Adjusted", "Segoe UI", "Liberation Sans","sans-serif"
+}
+
+
+/*------ Header--------*/  
 .header
 {
    border-top:3px solid #FF4500;
    padding-left:20px;
-   border-bottom:.5px solid;
+   border-bottom:.5px solid #D8D8D8;
    position:fixed;
    top:0;
    z-index:1;
+   height:50px;
    background-color:white;
    width:100%;
-}
-
-
-
-
-
-.search input
-{
-   
-   background:url("D:/Basic/Assets/Images/search.jpg") center left no-repeat; 
-   padding-left:25px;
-  
-}
-
-.search input:focus
-{
-  border-shadow:blue;
-}
- 
-
-
-
-
-
-.stack_img
-{
-   width:50px;
-   height:35px;
-}
-
-
-.text_img
-{
-   font-family:Arial;
-   font-size:20px;
-   position:relative;
-   bottom:10px;
 }
 
 
@@ -57,17 +29,18 @@
 .header_links
 {
    position:relative;
-   bottom:10px;
+   bottom:6px;
 }
 
 
 .header a
 {
    text-decoration:none;
-   color:black;
-   margin-right:10px;
-   margin-left:10px;
-   font-family:"system-ui";
+   color:#787272;
+   font-size:13px;
+   margin-right:15px;
+   margin-left:15px;
+   
 }
 
 
@@ -78,20 +51,65 @@
 }
 
 
-.login
+.stack_img
 {
-   background-color:white;
-   text-align:center;
-   color:blue;
-   border-color:blue;
-   border-radius:8px;
-   height:35px;
-   width:66px;
-   border-width:thin;
+    width: 32px;
+    height: 35px;
+    margin-left: 25px;
+    margin-top:2px;
+}
+
+.text_stack
+{
+    font-size: 17px;
+    position: relative;
+    font-family: Arial;
+    bottom: 5px;
+    margin-left: -7px;
 }
 
 
-.login:hover
+.text_stack b
+{
+   font-size:17px;
+   position:relative;
+   
+   margin-left:-5px;
+}
+
+
+.search input
+{
+    background: url(D:/Basic/Assets/Images/search.jpg) center left no-repeat;
+    padding-left: 25px;
+    width: 660px;
+    border: 1px solid #c3bcbc;
+    border-radius: 6px;
+}
+
+.search input:focus
+{
+   outline:2px solid #0c89c9;
+   outline-offset:2px;
+}
+ 
+
+
+
+.login_btn
+{
+   background-color: #ffffff;
+   text-align: center;
+   color: #748fe1;
+   border-color: #4c7ee1;
+   border-radius: 6px;
+   height: 33px;
+   width: 57px;
+   border-width: thin;
+}
+
+
+.login_btn:hover
 {
    background-color:#ADD8E6;
 }
@@ -105,30 +123,32 @@
 }
 
 
-.signup
+.signup_btn
 {
-   background-color:#0096FF;
-   text-align:center;
-   color:white;
-   border-radius:8px;
-   height:35px;
-   width:66px;
-   border-width:thin;
+    background-color: #0283dd;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 6px;
+    height: 35px;
+    width: 66px;
+    border-width: thin;
 }
 
 
-.signup:hover
+.signup_btn:hover
 {
    background-color:#0047AB;
 }
 
+/*--------------------EOF Header-----------*/
 
-.nav
+/*----Side Navigation-------*/
+.side_nav
 {
    width:250px;
-   height:90vh;
+   height:100vh;
    position:sticky;
-   top:60px;
+   top:54px;
    background-color:white;
    z-index:0;
    overflow-y:auto;
@@ -136,135 +156,146 @@
 }
 
 
-.nav_elms
+.sidenav_elms
 {
    line-height:2;
    padding:22px;
-   margin-left:45px;
+   margin-left:30px;
 }
 
 
-.nav_elms a
+.sidenav_elms a
 {
-   text-decoration:none;
-   color:black;
-   position:relative;
-   bottom:5px;
+   text-decoration: none;
+   color: #4a4545;
+   font-size: 13px;
+   position: relative;
+   bottom: 5px;
 }
 
 
-.nav_elms img
+.sidenav_elms img:not(.job,.message,.ilogo,.sidenav_overflow img)
 {
    width:20px;
-   height:25px;
+   height:20px;
    margin-top:5px;
 }
 
+.message
+{
+   margin-left:13px;
+}
 
-.labs
+.ilogo
+{
+   margin-left:15px;
+}
+
+.labs_txt
 {
    font-size:12px;
-   margin-right:35px;
-   font-family:Arial;
+   margin-right:60px;
+    ;
 }
 
 
-.colbox div
-{
-   display:flex;
-}
-
-
-.plus
+.col_txt
 {
    font-size:11px;
-   margin-right:10px;
+   margin-right:20px;
 }
 
 
-.line1
+.sidenav_txt
 {
-   line-height:14px; 
-   font-size:11px;
+    line-height: 14px;
+    font-size: 11px;
+    margin-top: 8px;
+    margin-bottom: -33px;
 }
 
 
-.link
+.sidenav_link a
 {
    margin-top:10px;
    font-size:11px;
    margin-right:1px;
-   color:blue;
+   color:#26262c;
    line-height:14px;
    text-decoration: underline;
-   text-decoration-color: blue;
+   text-decoration-color: #26262c;
 }
 
+.sidenav_txt1
+{
+    line-height: 14px;
+    font-size: 11px;
+    margin-top: 1px;
+   
+}
 
-.overflow img
+.sidenav_overflow img
 { 
-   width:150px;
-   height:100px;
    margin-left: -15px;
-   margin-top: -25px;
 }
 
 
-.overflow label
-{
-   font-size:11px;
-   line-height:11px;
-}
 
 
-.learn
+
+.learn_btn
 {
-   background-color:orange;
-   text-align:center;
-   color:white;
-   border-radius:8px;
-   height:35px;
-   width: 130px;
-   border-color:orange;
+   background-color: #db501f;
+   text-align: center;
+   color: #ffffff;
+   border-radius: 8px;
+   height: 34px;
+   width: 125px;
    margin-top: 12px;
+   border: none;
 }
 
 
-.learn:hover
+.learn_btn:hover
 {
-   background-color:orangered;
+   background-color:#c34111;
 }
 
 
-.exp
+.explore_btn
 {
-   background-color:white;
+   background-color:#ffffff;
    text-align:center;
    color:black;
    border-radius:8px;
-   height:35px;
-   width: 130px;
-   border-color:white;
+   height:34px;
+   width: 125px;
+   border:none;
    margin-top: 12px;
 }
 
 
-.exp:hover
+.explore_btn:hover
 {
-   background-color:grey;
+   border:1px solid #c3bcbc;
 }
 
+/*-----------EOF Side navigation------------*/
+
+/*--------Main Content-------------*/
+
+body{
+margin:0;
+}
 
 main
 {
-  
-   margin-top:30px;
-/*  margin-left:200px;  */
-  
+    margin-top: 35px;
+    margin-left: -19px; 
 }
 
 
-.maincls
+.main_cls
 {
    display:flex;
    height:2685px;
@@ -272,102 +303,115 @@ main
 }
 
 
-.propic
-{
-   height: 140px;
-   width: 130px;
-   border-radius:5px;
-   margin: 25px;
-}
-
-
 .profile
 {
-   margin:20px;
+    margin: 20px 20px;
+    display: flex;
+    height: 150px;
+}
+
+.colbox div
+{
    display:flex;
 }
 
-
-.name
+.profile_pic
 {
-   font-size: 35px;
-   font-family: Arial;
-   margin: 12px;
+   height: 128px;
+   width: 128px;
+   border-radius:5px;
+   margin:22px 15px 19px 21px;
 }
 
-
-.protxt
+.profile_txt
 {
    margin-top:35px;
 }
 
 
-.protxt img
+.profile_txt img
 {
    width:15px;
    height:15px;
    margin-right: 4px;
 }
 
+.profile_name
+{
+   font-size: 35px;
+}
 
-.prowr
+
+.profile_text
 {
    color:grey;
-   font-family:Arial;
    font-size: 12px;
    margin-right: 6px;
    margin-left: 4px;
 }
 
 
-.sel
+.select_box
 {
-    margin-left: 391px;
-    height: 35px;
-    width: 75px;
-    padding-left: 10px;
+    margin-left: 446px;
+    margin-top: 15px;
+    height: 34px;
+    width: 76px;
+    padding-left: 9px;
+    border-color: #b5b1b1;
     padding-right: -5px;
-    border-radius: 8px;
+    border-radius: 6px;
 }
 
 
-.prbt
+.profile_btn
 {
-    background-color: orange;
+    background-color: #e95c0e;
     tex-align: center;
     color: white;
     border-radius: 23px;
     height: 30px;
     width: 68px;
-    border-color: orange;
+    border: none;
     margin-left: 42px;
     margin-top: -25px;
 }
 
-
-.act
+.profile_btn:hover
 {
-   background-color: white;
+  background-color:#af4211;
+}
+
+
+.activity_btn
+{
+   background-color: #ffffff;
    tex-align: center;
    color: black;
    border-radius: 23px;
    height: 30px;
    width: 68px;
-   border-color:white;
    margin-left: 2px;
    margin-top: -25px;
-   box-shadow:none;  
+   border:none; 
 }
 
-
-.stats
+.activity_btn:hover
 {
-   font-size: 25px;
-   font-family: Arial;
+  background-color:#e1dfdb;
+}
+
+.stats_heading
+{
+   font-size: 23px;
    margin-left: 45px;
 }
 
-
+.about_heading
+{
+  font-family:Arial;
+  font-size:23px;
+}
 .statbox
 {
    border: 0.2px solid;
@@ -384,22 +428,20 @@ main
 
 .num
 {
-   font-family:Arial;
    margin-right:55px;
 }
 
 
 .num1
 {
-   font-family:Arial;
+    ;
    margin-right: 20px;
 }
-
 
 .txt1
 {
    font-size:12;
-   font-family:Arial;
+    ;
    color:#888888;
    margin-right:58px;
 }
@@ -408,7 +450,7 @@ main
 .txt2
 {
    font-size:12;
-   font-family:Arial;
+    ;
    color:#888888;
 }
 
@@ -422,7 +464,7 @@ main
 .txt3
 {
    font-size:12;
-   font-family:Arial;
+    ;
    color:#888888;
    margin-right:67px;
 }
@@ -653,7 +695,7 @@ margin-left:-25px;
 {
    margin-top: 4px;
    font-size: 25px;
-   font-family: Arial;
+   
 }
 
 
@@ -711,7 +753,7 @@ margin-left:-25px;
 {
    margin-top: 4px;
    font-size: 25px;
-   font-family: Arial;
+   
 }
 
 
@@ -762,7 +804,7 @@ margin-left:-25px;
 {
    margin-top: 4px;
    font-size: 25px;
-   font-family: Arial;
+   
 }
 
 
@@ -815,7 +857,7 @@ margin-left:-25px;
 .tagtitle
 { 
    font-size: 25px;
-   font-family: Arial; 
+    
 }
 
 
@@ -855,7 +897,7 @@ margin-left:-25px;
 
 .tagtxt
 {
-   font-family:Arial;
+    ;
    font-size:12px;
    font-color:#D8D8D8;
    margin-right:10px;
@@ -914,7 +956,7 @@ margin-left:-25px;
    text-decoration:none;
    margin-top:19px;
    color:#3994d3;
-   font-family:Arial;
+    ;
 }
 
 .inspst label
@@ -985,7 +1027,7 @@ margin-left:-25px;
    text-decoration:none;
    margin-top:19px;
    color:#3994d3;
-   font-family:Arial;
+    ;
 }
 
 
@@ -1048,7 +1090,7 @@ margin-left:-25px;
    text-decoration:none;
    margin-top:19px;
    color:#3994d3;
-   font-family:Arial;
+    ;
 }
 
 
@@ -1088,7 +1130,7 @@ margin-left:-25px;
 .disfoot h5
 {
     color: #C0C0C0;
-    font-family: Arial;
+    
     margin-left: 30px;
     margin-top: 30px;
     
@@ -1100,7 +1142,7 @@ margin-left:-25px;
    color:#C0C0C0;
    list-style-type:none;
    font-size:13px;
-   font-family:Arial;
+    ;
    margin-top:15px;
 }
 
@@ -1124,7 +1166,7 @@ margin-left:-25px;
 {
    color:#C0C0C0;
    font-size:11px;
-   font-family:Arial;
+    ;
    margin-top: 30px;
    margin-right:10px;
    
@@ -1134,7 +1176,7 @@ margin-left:-25px;
 {
     color: #C0C0C0;
     font-size: 11px;
-    font-family: Arial;
+    
     margin-top: 250px;
   
 }
@@ -1152,7 +1194,7 @@ margin-left:-25px;
 .badg
 {
    font-size: 25px;
-   font-family: Arial;
+   
    margin-left: 45px;
 }
 
@@ -1162,36 +1204,5 @@ margin-left:-25px;
 
 
 
-/*-------------------------------------------Media Query--------------------------------------*/
-
-
-@media screen and (max-width:600px)
-{
-
-	.search input
-	{
-	  width:1px;
-          border:none;
-	  margin-left:225px;
-	}
-	
-	
-
-	.header a:not(.products)
-	{
-	  display:none;
-	}
-	
-	.products
-	{
-	  font-size:12px;
-	  margin-right:50px;
-	}
-	
-	.text_img
-	{
-	  display:none;
-	}
-}
 
 
